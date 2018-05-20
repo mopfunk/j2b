@@ -1,0 +1,105 @@
+.mainheader {
+	grid-area: header;
+	background-color: rgba(54,50,55,0.5);
+	color: white;
+}
+
+.content { grid-area: content; }
+
+.siderbar {
+	grid-area: sidebar;
+}
+
+#page-wrap {
+    position: fixed;
+    height: 132px;
+    right: 0; 
+    padding: 15px;
+    margin-top: 100px;
+}
+
+.mainfooter {
+	grid-area: footer;
+	background-color: #2d4262;
+	text-align: center;
+	box-shadow: 0 0 5px black;
+	background-size: cover;
+	color: white;
+	font-size: 10px;
+	position: relative;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1px;
+	border-radius: 20px;
+	/*width: 50%; */
+}
+.wrapper {
+	display: grid;
+	width: 90%;
+	margin: 0 auto 0 auto;
+	grid-template-columns: 9fr 40px 3fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	  "header header header"
+	  "content . sidebar"
+	  "footer footer footer";
+}
+
+.content .primary {
+	grid-area: article-primary;
+	padding: 5px;
+	margin-bottom: 25px;
+}
+
+.content aside {
+	grid-area: article-secondary;
+}
+.content > h1 {
+	grid-area: chapterhead;
+	background-color: #d09683;
+	color: white;
+	box-shadow: 0 0 7px black;
+}
+
+.content {
+	display: grid;
+	grid-template-columns: 9fr 40px 3fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	  "chapterhead . ."
+	  "article-primary . article-secondary";
+}
+
+header {
+	background-size: cover;
+	font-family: sans-serif;
+	box-shadow: 0 0 10px black;
+	border-radius: 20px;
+	background-color: #73605b;
+	padding: 3px;
+	margin: 2px;
+	text-align: center;
+}
+
+h1 {
+	padding: 7px;
+}
+
+body {
+	background-color: #white;
+	font-family: monospace;
+	margin: 0;
+    background-image: url("mnt1.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+html {
+	color: #black;
+}
+
+ul {
+    list-style-type: none;
+    color: #736058;
+}
