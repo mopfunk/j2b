@@ -1,2 +1,2 @@
-# j2b
-A simple site for our travel blog
+# Purpose
+This will be the repository for our simple travel blog and update site.
