@@ -119,3 +119,8 @@ ul {
     list-style-type: none;
     color: #736058;
 }
+
+a {
+	text-decoration: none;
+	color: #736058;
+}
