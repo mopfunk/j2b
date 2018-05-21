@@ -1,7 +1,9 @@
 .mainheader {
 	grid-area: header;
-	background-color: rgba(54,50,55,0.5);
+/*	background-color: rgba(54,50,55,0.1);*/
+	background-color: rgb(54,50,55);
 	color: white;
+	font-family: monospace;
 }
 
 .content { grid-area: content; }
@@ -20,17 +22,17 @@
 
 .mainfooter {
 	grid-area: footer;
-	background-color: #2d4262;
+/*	background-color: #2d4262;*/
 	text-align: center;
-	box-shadow: 0 0 5px black;
+/*	box-shadow: 0 0 5px black;*/
 	background-size: cover;
 	color: white;
 	font-size: 10px;
-	position: relative;
+	position: absolute;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	padding: 1px;
+	padding: 0.25px;
 	border-radius: 20px;
 	/*width: 50%; */
 }
@@ -57,7 +59,9 @@
 }
 .content > h1 {
 	grid-area: chapterhead;
-	background-color: #d09683;
+/*	background-color: #d09683;*/
+	background-color: rgba(45,66,98,0.6);
+/*	background-color: #2d4262;*/
 	color: white;
 	box-shadow: 0 0 7px black;
 }
@@ -70,6 +74,18 @@
 	  "chapterhead . ."
 	  "article-primary . article-secondary";
 }
+
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+/*
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+*/
 
 header {
 	background-size: cover;
